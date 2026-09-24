@@ -1,41 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Free Stock Market Education</title>
-  <meta name="description" content="Learn chart basics, market psychology & risk management. 100% educational. No buy/sell tips.">
-  <style>
-    :root{--bg:#0c0c1d;--panel:#15182b;--text:#eef2ff;--muted:#a7b0c5;--brand:#00ff99;}
-    *{box-sizing:border-box} html,body{margin:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:grid;place-items:center;padding:16px}
-    .card{width:100%;max-width:480px;background:var(--panel);border:1px solid #262b45;border-radius:16px;padding:20px;text-align:center;box-shadow:0 10px 35px rgba(0,0,0,.35)}
-    h1{font-size:1.6rem;margin:.25rem 0 0;background:linear-gradient(90deg,#00f0ff,var(--brand));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .sub{color:var(--muted);font-size:.98rem;margin:.5rem auto 1rem;max-width:36ch}
-    ul{list-style:none;padding:0;margin:0 0 1rem} li{margin:.45rem 0}
-    .pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px dashed rgba(0,255,153,.35);background:rgba(0,255,153,.08);color:#d8ffe9;font-size:.85rem;margin-bottom:.75rem}
-    .cta{display:inline-block;margin-top:.5rem;padding:12px 16px;background:var(--brand);color:#041b14;font-weight:700;border-radius:12px;text-decoration:none;box-shadow:0 0 0 0 rgba(0,255,153,.55);animation:pulse 1.7s infinite}
-    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,255,153,.45)}70%{box-shadow:0 0 0 18px rgba(0,255,153,0)}100%{box-shadow:0 0 0 0 rgba(0,255,153,0)}}
-    .note{font-size:.86rem;color:var(--muted);margin-top:1rem}
-    .disclaimer{font-size:.8rem;color:#9da7bb;margin-top:.6rem}
-    footer{margin-top:.9rem;font-size:.75rem;opacity:.8}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCK LEARNERS 🫆 ( GOUTAM JHA )</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4479576798989134');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4479576798989134&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #1e1e1e;
+            border-radius: 24px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #2a2a2a;
+        }
+
+        /* Profile Image */
+        .profile-container {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 4px solid #ffcc00;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Headings & Badges */
+        .title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffcc00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #d1d1d1;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .check-green { color: #28a745; }
+
+        /* Quick Info Pills */
+        .info-pill {
+            background-color: #2a2a2a;
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        /* Main Telegram Button */
+        .btn-telegram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #0088cc;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 16px 20px;
+            border-radius: 30px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-telegram:hover { background-color: #0077b5; }
+
+        /* Feature List Pills */
+        .feature-pill {
+            background-color: #262626;
+            border: 1px solid #333333;
+            color: #ffffff;
+            padding: 14px 16px;
+            border-radius: 14px;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-align: left;
+        }
+
+        .feature-pill i {
+            color: #28a745;
+            font-size: 16px;
+        }
+
+        /* Footer Links */
+        .footer-links {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #333333;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .footer-links button {
+            background: none;
+            border: none;
+            color: #888888;
+            font-size: 12px;
+            cursor: pointer;
+            transition: color 0.2s ease;
+            text-decoration: underline;
+        }
+
+        .footer-links button:hover { color: #ffffff; }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background-color: #242424;
+            color: #dddddd;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 450px;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 24px;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+            text-align: left;
+            border: 1px solid #333;
+        }
+
+        .modal-content h2 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .modal-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: #aaaaaa;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover { color: #ffffff; }
+    </style>
+    
 </head>
 <body>
-  <main class="card">
-    <div class="pill">100% Educational • Policy Safe</div>
-    <h1>Learn Stock Market the Right Way</h1>
-    <p class="sub">Chart basics, market psychology & risk management for beginners. No tips, no promises.</p>
-    <ul aria-label="You will learn">
-      <li>• Reading trends & support/resistance (basics only)</li>
-      <li>• Risk rules & common beginner mistakes</li>
-      <li>• How to practice without real money</li>
-    </ul>
-    <a class="cta" href="bridge.html" rel="nofollow noopener">Start Learning</a>
-    <p class="note">No login required. Access learning resources after a short verification.</p>
-    <p class="disclaimer"><em>For educational purposes only. We do not provide investment, trading, or financial advice.</em></p>
-    <footer>© <span id="y"></span> Market Basics Learning</footer>
-  </main>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+
+    <div class="container">
+        <div class="profile-container">
+            <img src="Gautam.jpeg" alt="Stock Learners Profile">
+        </div>
+
+        <h1 class="title">
+            <i class="fa-solid fa-crown"></i> STOCK LEARNERS (GOUTAM JHA) <i class="fa-solid fa-crown"></i>
+        </h1>
+
+        <div class="subtitle">
+            <i class="fa-solid fa-square-check check-green"></i> Trusted by thousands of learners
+        </div>
+
+        <div class="info-pill">24/7 Updates</div>
+        <div class="info-pill">Free to Join</div>
+
+        <a href="https://t.me/+xNYecCjyp94xNDll" class="btn-telegram" target="_blank">
+            <i class="fa-paper-plane fa-solid"></i> Join on Telegram
+        </a>
+
+        <div class="feature-pill">
+            <i class="fa-solid fa-circle-check"></i> Market Insights & Discussions
+        </div>
+        <div class="feature-pill">
+            <i class="fa-solid fa-circle-check"></i> Learn with Experts
+        </div>
+        <div class="feature-pill">
+            <i class="fa-solid fa-circle-check"></i> Practical Strategies
+        </div>
+
+        <div class="footer-links">
+            <button onclick="openModal('modal-about')">About Us</button>
+            <button onclick="openModal('modal-terms')">Terms & Conditions</button>
+            <button onclick="openModal('modal-disclaimer')">Disclaimer</button>
+            <button onclick="openModal('modal-contact')">Contact Us</button>
+        </div>
+    </div>
+
+    <div id="modal-about" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-about')">&times;</button>
+            <h2>About Us</h2>
+            <p>Welcome to STOCK LEARNERS 🫆 ( GOUTAM JHA ). We provide educational content, stock market insights, and trading strategies to help users learn and grow.</p>
+            <p>Our aim is to build a strong community of market enthusiasts through real-time updates and expert advice.</p>
+        </div>
+    </div>
+
+    <div id="modal-terms" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-terms')">&times;</button>
+            <h2>Terms & Conditions</h2>
+            <p>1. The content provided is strictly for educational and informational purposes.</p>
+            <p>2. Joining our Telegram channel does not guarantee financial returns or financial advisory services.</p>
+            <p>3. Users are advised to trade and invest at their own risk.</p>
+        </div>
+    </div>
+
+    <div id="modal-disclaimer" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-disclaimer')">&times;</button>
+            <h2>Disclaimer</h2>
+            <p>We are not SEBI registered advisors. All market insights shared are purely for educational purposes.</p>
+            <p>Trading in financial markets involves high risk. Please consult a certified financial advisor before making any investment decisions.</p>
+        </div>
+    </div>
+
+    <div id="modal-contact" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-contact')">&times;</button>
+            <h2>Contact Us</h2>
+            <p>Have any questions or need support? Get in touch with us:</p>
+            <p><strong>Email:</strong> support@stocklearners.com</p>
+            <p><strong>Telegram Support:</strong> @stocklearners_support</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+        // Close modal when clicking outside content area
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+
 </body>
 </html>
